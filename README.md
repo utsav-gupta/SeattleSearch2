@@ -6,6 +6,7 @@ Clone the project and configure it on android studio. It should build by ittself
 
 The project follows strict MVP architecture.
 The App is tested on
+The App is compiled on android sdk v 26.
 All the requirements are completed as mentioned
 
 Requirements

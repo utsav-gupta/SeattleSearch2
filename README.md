@@ -5,7 +5,7 @@ https://github.com/utsav-gupta/SeattleSearch2
 Clone the project and configure it on android studio. It should build by ittself with no modification.
 
 The project follows strict MVP architecture.
-The App is tested on
+The App is tested on Nexus Api 25 (Emulator), and Samsun Api 19 ( Device) and is found t be fully functional and no crashes.
 The App is compiled on android sdk v 26.
 All the requirements are completed as mentioned
 

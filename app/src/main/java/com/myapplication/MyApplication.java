@@ -22,7 +22,7 @@ import java.util.Set;
 public class MyApplication extends Application {
 
     private static Context mContext ;
-    public static android.location.Location SEATTLE_LOC = new android.location.Location("seattle");
+    public  static android.location.Location SEATTLE_LOC = new android.location.Location("seattle");
     private static Set<String> favList;
     public static  ImageLoader imageLoader;
 
@@ -31,7 +31,8 @@ public class MyApplication extends Application {
         super.onCreate();
         mContext = this;
         favList = mContext.getSharedPreferences("com.myapplication",MODE_PRIVATE).getStringSet("fav_list", null);
-
+        SEATTLE_LOC.setLatitude(47.6062);
+        SEATTLE_LOC.setLongitude(-122.3321);
         imageLoader= ImageLoader.getInstance();
 
         final DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()

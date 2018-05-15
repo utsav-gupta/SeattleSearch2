@@ -70,7 +70,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
     }
 
     @Override
-    public ListViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ListViewHolder onCreateViewHolder(ViewGroup parent, final int viewType) {
         View view  = LayoutInflater.from(parent.getContext()).inflate(R.layout.venue_list_item,parent, false);
         final ListViewHolder lvh = new ListViewHolder(view);
         view.setOnClickListener(new View.OnClickListener() {
@@ -86,6 +86,8 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
                 i.putExtra("dist_from_seattle", selectedVenue.getDistFromSeattle());
                 i.putExtra("url", selectedVenue.getUrl());
                 i.putExtra("id", selectedVenue.getId());
+                i.putExtra("latitude", String.valueOf(selectedVenue.getLocation().getLat()));
+                i.putExtra("longitude", String.valueOf(selectedVenue.getLocation().getLng()));
                 parentAcivity.startActivity(i);
             }
         });

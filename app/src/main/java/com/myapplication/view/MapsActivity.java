@@ -61,6 +61,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 i.putExtra("dist_from_seattle", selectedVenue.getDistFromSeattle());
                 i.putExtra("url", selectedVenue.getUrl());
                 i.putExtra("id", selectedVenue.getId());
+                i.putExtra("latitude", String.valueOf(selectedVenue.getLocation().getLat()));
+                i.putExtra("longitude", String.valueOf(selectedVenue.getLocation().getLng()));
                 startActivity(i);
             }
         });

@@ -14,7 +14,7 @@ Requirements
 	Complete: A standard autocomplete search box is used which remembers your last search in the session and auto suggests you accordingly
 
 2. When a search returns results, these should be displayed in a list format. Each list item should provide, at a minimum, the name of the place (e.g., Flitch Coffee), the category of the place (e.g., Coffee Shop), the icon from the response, the distance from the center of Seattle (47.6062° N, 122.3321° W) to the place, and whether the place has been favorited by the user. Clicking a list item should launch the details screen for that place.
-	Complete
+	Complete. The link for icon is giving FileNotFound Exception because of which the icons are not being shown in list.
 
 3. When a search returns results, the main screen should include a Floating Action Button. Clicking the Floating Action Button should launch a full-screen map with a pin for every search result. Clicking a pin should show the name of the place on the map, and clicking on the name should then open the details screen for the given place.
 	Complete.
